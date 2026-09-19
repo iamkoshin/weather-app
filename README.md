@@ -1,8 +1,8 @@
 # Weather App
 
-A lightweight weather dashboard built with HTML, CSS, and JavaScript. It lets users search for a city and view the current temperature, humidity, wind speed, and weather condition using the OpenWeatherMap API.
+A clean, responsive weather dashboard built with HTML, CSS, and JavaScript. It fetches live weather data from the OpenWeatherMap API and displays the current conditions for a city, including temperature, humidity, wind speed, and the relevant weather icon.
 
-## Project Overview
+## Overview
 
 This project is a simple front-end application that demonstrates:
 
@@ -42,9 +42,16 @@ Weather/
 │   ├── mist.png
 │   ├── rain.png
 │   ├── search.png
-│   └── wind.png
-└── README.md
+│   ├── snow.png
+│   ├── wind.png
+│   └── weather-app.png
+├── README.md
+└── .git/
 ```
+
+## Screenshot
+
+![Weather App Preview](images/weather-app.png)
 
 ## How It Works
 
@@ -56,7 +63,7 @@ Weather/
    - humidity
    - wind speed
    - weather icon
-4. If the city is not found, an error message is displayed.
+4. If the city cannot be found, the app shows an error message instead of the weather data.
 
 ## Setup
 
@@ -67,12 +74,12 @@ git clone <repository-url>
 cd "Weather"
 ```
 
-### 2. Open the app
+### 2. Run the app
 
 You can either:
 
-- open `index.html` directly in your browser, or
-- start a small local server from the project folder
+- open `index.html` directly in a browser, or
+- serve the project locally
 
 Example using Python:
 
@@ -80,7 +87,7 @@ Example using Python:
 python -m http.server 8000
 ```
 
-Then open:
+Then visit:
 
 ```text
 http://localhost:8000
@@ -88,33 +95,33 @@ http://localhost:8000
 
 ## API Configuration
 
-This app uses a hardcoded API key in `main.js`:
+The app uses a hardcoded API key in `main.js`:
 
 ```javascript
 const apiKey = "YOUR_API_KEY";
 ```
 
-If you want to use your own OpenWeatherMap key, replace the value in `main.js`.
+Replace the value with your own OpenWeatherMap API key if needed.
 
-> Important: keep API keys private and avoid committing them publicly if the project is shared online.
+> Keep API keys private and avoid committing them to public repositories.
 
 ## Usage
 
-1. Type a city name such as `London`, `Tokyo`, or `New York`.
-2. Click the search button.
-3. View the current weather information for that city.
+1. Enter a city name such as `London`, `Tokyo`, or `New York`.
+2. Click the search button or press Enter.
+3. Review the current weather details for that city.
 
 ## Notes
 
-This is a front-end-only project and does not include backend logic, database storage, or user authentication.
+This is a front-end-only project and does not include backend logic, database storage, or authentication.
 
 ## Future Improvements
 
-- add a default city on page load
-- support search by pressing Enter
-- add 5-day forecast
-- move API key to environment variables
-- improve responsive design for mobile devices
+- add a default city on initial load
+- add animated weather transitions
+- add a 5-day forecast
+- move the API key to environment variables
+- improve responsiveness for smaller screens
 
 ## License
 
