@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="WeatherCast favicon">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+
+  <circle cx="44" cy="42" r="20" fill="url(#sun)"/>
+  <g fill="none" stroke="#e2e8f0" stroke-width="6" stroke-linecap="round">
+    <path d="M44 10v8"/>
+    <path d="M44 74v8"/>
+    <path d="M12 42h8"/>
+    <path d="M76 42h8"/>
+    <path d="M20 20l5 5"/>
+    <path d="M68 68l5 5"/>
+    <path d="M20 64l5-5"/>
+    <path d="M68 16l5-5"/>
+  </g>
+
+  <path d="M32 74c0-9 7-16 16-16 2 0 4 .4 6 1.2A18 18 0 0 1 74 56c10 0 18 8 18 18 0 1 0 2-.2 3H32z" fill="#dbeafe" opacity="0.9"/>
+  <path d="M42 77h42c7 0 12 5 12 12H30c0-7 5-12 12-12z" fill="#bfdbfe" opacity="0.9"/>
+  <path d="M82 86h22" stroke="#f8fafc" stroke-width="6" stroke-linecap="round"/>
+</svg>

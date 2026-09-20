@@ -1,47 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Weather App</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="oWjMs46QIl0TwAX0ioxWvnLOYV5Swi-cmZdE8j4mcIs" />
+    <meta
+      name="description"
+      content="WeatherCast provides real-time weather conditions, hourly updates, humidity, and wind speed for cities around the world."
+    />
+    <meta
+      name="keywords"
+      content="weather app, live weather, temperature, humidity, wind speed, city forecast, weather forecast"
+    />
+    <meta name="author" content="Your Name or Brand" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta
+      property="og:title"
+      content="WeatherCast | Live Weather Forecast & Conditions"
+    />
+    <meta
+      property="og:description"
+      content="Check current weather, humidity, and wind speed for any city in seconds with a clean, modern weather dashboard."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/weather-preview.jpg" />
+    <meta property="og:url" content="https://yourwebsite.com/weather-app" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="WeatherCast | Live Weather Forecast & Conditions"
+    />
+    <meta
+      name="twitter:description"
+      content="Check current weather, humidity, and wind speed for any city in seconds."
+    />
+    <meta name="twitter:image" content="images/weather-preview.jpg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.svg" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <link rel="canonical" href="https://cimilada.vercel.app/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "WeatherCast",
+        "alternateName": "WeatherCast App",
+        "applicationCategory": "WeatherApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Live weather forecast and current conditions app for checking temperature, humidity, wind speed, and city-based forecasts.",
+        "url": "https://cimilada.vercel.app/",
+        "image": "https://cimilada.vercel.app/favicon.svg",
+        "author": {
+          "@type": "Organization",
+          "name": "Koshin Media"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "City weather lookup",
+          "Temperature tracking",
+          "Humidity details",
+          "Wind speed monitoring",
+          "Responsive weather dashboard"
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <title>WeatherCast | Live Weather Forecast & Conditions</title>
+  </head>
+  <body>
     <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Enter City Name" spellcheck="false" >
-            <button><img src="images/search.png" alt="Search"></button>
-        </div>
-        <div class="error">
-            <p>Invalid city name</p>
-        </div>
-        <div class="weather">
-            <img src="images/rain.png" alt="Weather Icon" class="weather-icon">
-            <h1 class="temp">22°C</h1>
-            <h2 class="city">New York</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="images/humidity.png" alt="Humidity Icon">
-                    <div class="container">
-                        <p class="humidity">80%</p>
-                        <p>Humidity</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <img src="images/wind.png" alt="Wind Speed Icon">
-                    <div class="container">
-                        <p class="wind-speed">15 km/h</p>
-                        <p >Wind Speed</p>
-                    </div> 
-                </div>
-
+      <div class="search">
+        <input type="text" placeholder="Enter City Name" spellcheck="false" />
+        <button><img src="images/search.png" alt="Search" /></button>
+      </div>
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+      <div class="weather">
+        <img src="images/rain.png" alt="Weather Icon" class="weather-icon" />
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">New York</h2>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" alt="Humidity Icon" />
+            <div class="container">
+              <p class="humidity">80%</p>
+              <p>Humidity</p>
             </div>
+          </div>
+
+          <div class="col">
+            <img src="images/wind.png" alt="Wind Speed Icon" />
+            <div class="container">
+              <p class="wind-speed">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="main.js"></script>
-        
-    
-</body>
+  </body>
 </html>
